@@ -1,0 +1,61 @@
+.container{
+    border: 1px solid black;
+    background-color:yellow;
+    height: 700px;
+    width: 500px;
+
+    display: grid;
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 100px 400px;
+    grid-gap: 4px;
+
+    grid-template-areas: 
+    "hd hd"
+    "side main"
+    "ft ft"
+}
+
+.box{
+border: 1px solid red;
+background-color: aqua;
+}
+
+#header{
+    grid-area: hd;
+}
+#footer{
+    grid-area: ft;
+}
+#sidebar{
+grid-area: side;
+}
+#content{
+    grid-area:main ;
+}
+
+.childgrid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.element{
+    border: 2px solid green;
+    background-color: hotpink;
+}
+
+/* var function ekk css ki property hoti hai ,hamesgha isse root function mai 
+likhege kyuki usse hum use karte hai kiske saath 
+:root{
+    --dark-red:#981a2c;
+}
+
+aue yeh color ko import karne ke liye 
+coloe:var(--dark-red)
+root mai define karne ke baad yeh ekk global variable ban gaya; */
+
+/* specific id ,div mai agar hum variable declare kar rahe hai toh woh local variable hai */

@@ -1,0 +1,13 @@
+#first{
+width: 600px;
+height: 600px;
+border: 1px solid black;
+background-color: white;
+}
+
+ #first #second{
+    width: 50%;
+    height: 50%;
+  
+background-color: lightseagreen;
+}
